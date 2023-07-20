@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tesitng vue.js-day5</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="app" class="columns">
+        <div class="column">
+            <tweet-component v-for="tweet in tweets":tweet="tweet" />
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

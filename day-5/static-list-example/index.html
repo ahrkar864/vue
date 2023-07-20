@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tesitng vue.js-day5</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="app">
+        <ul>
+            <li>1</li>
+            <li>10</li>
+            <li>100</li>
+            <li>1000</li>
+            <li>10000</li>
+        </ul>
+        <ul>
+            <li v-for="number in numbers">
+                <p>{{ number }}</p>
+                <input placeholder="type something..."/ >
+            </li>
+        </ul>
+        <button @click="shuffle">Shuffle</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
