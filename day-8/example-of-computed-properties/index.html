@@ -1,0 +1,23 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tesitng vue.js-day8</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="app">
+        <p>Has published books</p>
+        <!-- <span>{{ author.books.length > 0 ? 'Yes' : 'No' }}</span> -->
+        <span>{{ publishedBooksMessage }}</span>
+        <p>Current count: {{ count }}</p>
+        <button @click="increment"> Increment </button>
+        <button @click="decrement"> Decrement </button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

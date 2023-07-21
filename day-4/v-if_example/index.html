@@ -10,8 +10,8 @@
 <body>
     <div id="app">
         <h2>{{ greeting }}</h2>
-        <p v-if="city === 'Toronoto'">by {{ user }} who lives in {{ city }}</p>
-        <p v-if="city === 'lagos'">by {{ user }} who wishes to visit {{ city }}</p>
+        <p v-if="city === 'Toronto'">by {{ user }} who lives in {{ city }}</p>
+        <p v-if="city === 'Lagos'">by {{ user }} who wishes to visit {{ city }}</p>
         <img v-bind:src="cityImage">
         <button v-on:click="changeCity">Change City</button>
     </div>
