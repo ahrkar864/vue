@@ -4,9 +4,9 @@ new Vue({
       author: {
         name: 'Ahrkar Kyaw',
         books: [
-          'Vue - Advanced Guide',
-          'Vue - Basic Guide',
-          'Vue - the Mystery'
+          // 'Vue - Advanced Guide',
+          // 'Vue - Basic Guide',
+          // 'Vue - the Mystery'
         ]
       },
       number: {

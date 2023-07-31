@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tesitng vue.js-day10</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" integrity="sha512-HqxHUkJM0SYcbvxUw5P60SzdOTy/QVwA1JJrvaXJv4q7lmbDZCmZaqz01UPOaQveoxfYRv1tHozWGPMcuTBuvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="app">
+        
+        <tweet-component
+        v-for="tweet in tweets" :key="tweet.id">
+        </tweet-component>
+
+        <div class="tweet"
+          v-for="tweet in tweets"
+          :key="tweet.id">
+          <div class="box">
+            <article class="media">
+              <div class="media-left">
+                <figure class="image is-64x64">
+                  <img :src="tweet.img">
+                </figure>
+              </div>
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong>{{tweet.name}}</strong>
+                    <small>{{tweet.handle}}</small>
+                    <br>
+                    {{tweet.tweet}}
+                  </p>
+                </div>
+                <div class="level-left">
+                  <a class="level-item">
+                    <span class="icon is-small">
+                      <i class="fas fa-heart"></i>
+                    </span>
+                    <span class="likes">
+                      {{tweet.likes}}
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="control has-icons-left">
+            <input class="input is-small"
+              placeholder="Tweet your reply..." />
+            <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+          </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
